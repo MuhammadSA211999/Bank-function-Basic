@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <h1 class="text-5xl text-center mt-16">get lets some <span class="text-purple-800 font-bold">money</span> </h1>
+    </header>
+
+    <main class="w-3/4 mx-auto">
+        <section class="mt-10">
+            <div class="grid grid-cols-3 gap-3 text-white">
+                <div class="bg-blue-400 p-16 rounded ">
+                    <h2 class="text-3xl">Deposit</h2>
+                    <h4 class="text-5xl"> $<span id="deposit-total">00</span> </h4>
+                </div>
+                <div class="bg-red-400 p-16 rounded ">
+                    <h2 class="text-3xl">Widthdraw</h2>
+                    <h4 class="text-5xl">$<span id="widthdraw-total">00</span></h4>
+                </div>
+                <div class="bg-green-400 p-16 rounded ">
+                    <h2 class="text-3xl">Balance</h2>
+                    <h4 class="text-5xl">$<span id="balance-total">1200</span> </h4>
+                </div>
+            </div>
+        </section>
+        <!-- deposit and Widthdraw -->
+        <section class="mt-8 ">
+            <div>
+                <div class="grid grid-cols-2 gap-3">
+                    <div class="bg-red-200 p-8 rounded">
+                        <h3 class="text-2xl">Please Deposit</h3>
+                        <input id="deposit-input" class="border border-grey-400 rounded block w-3/4 mb-2 px-3"
+                            type="text" placeholder="sum of money">
+                        <button id="deposit-btn"
+                            class="rounded block w-3/4 mb-2 px-3 bg-yellow-500 text-white font-semibold">Deposit</button>
+                    </div>
+                    <div class="bg-purple-200 p-8 rounded">
+                        <h3 class="text-2xl">Please Widthdraw</h3>
+                        <input id="widthdraw-input" class="border border-grey-400 rounded block w-3/4 mb-2 px-3"
+                            type="text" placeholder="sum of Widthdraw money">
+                        <button id="widthdraw-btn"
+                            class="rounded block w-3/4 mb-2 px-3 bg-red-700 text-white font-semibold">Widthdraw</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="js/total-function-banking.js"></script>
+    <!-- <script src="js/without-fucntion.js"></script> -->
+</body>
+
+</html>
